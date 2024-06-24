@@ -1,3 +1,4 @@
 scripts.md 
 node_modules
 build
+.env
