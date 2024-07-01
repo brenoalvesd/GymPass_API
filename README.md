@@ -7,8 +7,8 @@
 ## Requisitos Funcionais
 
 - [x] O usuário poderá fazer cadastro 
-- [] O usuário poderá fazer autenticação
-- [] Deve ser possível obter o perfil de um usuário logado
+- [x] O usuário poderá fazer autenticação
+- [x] Deve ser possível obter o perfil de um usuário logado
 - [] Deve ser possível obter o número de check-ins realizados pelo usuário logado
 - [] O usuário poderá ter um histório de check-ins
 - [] O usuário poderá buscar academias próximas 
@@ -30,6 +30,6 @@
 ## Requisitos Não Funcionais 
 
 - [x] A senha do uusário precisa estar criptografada
-- [] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL 
+- [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL 
 - [] Todas as lista de dados precisam estar paginadas com 20 itens por página 
 - [] O usuário deve ser identificado por um JWT (JSON Web Token)
