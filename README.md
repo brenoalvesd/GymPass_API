@@ -11,7 +11,7 @@
 - [x] Deve ser possível obter o perfil de um usuário logado
 - [x] Deve ser possível obter o número de check-ins realizados pelo usuário logado
 - [x] O usuário poderá ter um histório de check-ins
-- [] O usuário poderá buscar academias próximas 
+- [x] O usuário poderá buscar academias próximas (até 10km)
 - [x] O usuário poderá buscar academias pelo nome 
 - [x] O usuário poderá fazer check-in em uma academia
 - [] Deve ser possível validar o check-in de um usuário 
@@ -29,7 +29,7 @@
 
 ## Requisitos Não Funcionais 
 
-- [x] A senha do uusário precisa estar criptografada
+- [x] A senha do usuário precisa estar criptografada
 - [x] Os dados da aplicação precisam estar persistidos em um banco PostgreSQL 
 - [x] Todas as lista de dados precisam estar paginadas com 20 itens por página 
 - [] O usuário deve ser identificado por um JWT (JSON Web Token)
