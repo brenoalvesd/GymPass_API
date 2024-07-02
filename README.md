@@ -9,7 +9,7 @@
 - [x] O usuário poderá fazer cadastro 
 - [x] O usuário poderá fazer autenticação
 - [x] Deve ser possível obter o perfil de um usuário logado
-- [] Deve ser possível obter o número de check-ins realizados pelo usuário logado
+- [x] Deve ser possível obter o número de check-ins realizados pelo usuário logado
 - [x] O usuário poderá ter um histório de check-ins
 - [] O usuário poderá buscar academias próximas 
 - [] O usuário poderá buscar academias pelo nome 
