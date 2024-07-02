@@ -18,8 +18,8 @@ describe('Check-in Use Case', () => {
       id: 'gymID-01',
       title: 'Champions gym',
       description: 'Only big men allowed',
-      latitute: new Decimal(0),
-      longitute: new Decimal(0),
+      latitute: new Decimal(-27.0747279),
+      longitute: new Decimal(-49.4889672),
       phone: '',
     })
 
@@ -34,8 +34,8 @@ describe('Check-in Use Case', () => {
     const { checkIn } = await sut.execute({
       gymId: 'gymID-01',
       userId: 'userID-01',
-      userLatitude: 0,
-      userLongitude: 0,
+      userLatitude: -27.0747279,
+      userLongitude: -49.4889672,
     })
 
     expect(checkIn.id).toEqual(expect.any(String))
@@ -50,16 +50,16 @@ describe('Check-in Use Case', () => {
     await sut.execute({
       gymId: 'gymID-01',
       userId: 'userID-01',
-      userLatitude: 0,
-      userLongitude: 0,
+      userLatitude: -27.0747279,
+      userLongitude: -49.4889672,
     })
 
     await expect(() =>
       sut.execute({
         gymId: 'gymID-01',
         userId: 'userID-01',
-        userLatitude: 0,
-        userLongitude: 0,
+        userLatitude: -27.0747279,
+        userLongitude: -49.4889672,
       }),
     ).rejects.toBeInstanceOf(Error)
   })
@@ -70,8 +70,8 @@ describe('Check-in Use Case', () => {
     await sut.execute({
       gymId: 'gymID-01',
       userId: 'userID-01',
-      userLatitude: 0,
-      userLongitude: 0,
+      userLatitude: -27.0747279,
+      userLongitude: -49.4889672,
     })
 
     vi.setSystemTime(new Date(2022, 0, 22, 9, 0, 0)) // 22/01/2022 às 9:00
@@ -79,10 +79,30 @@ describe('Check-in Use Case', () => {
     const { checkIn } = await sut.execute({
       gymId: 'gymID-01',
       userId: 'userID-01',
-      userLatitude: 0,
-      userLongitude: 0,
+      userLatitude: -27.0747279,
+      userLongitude: -49.4889672,
     })
 
     expect(checkIn.id).toEqual(expect.any(String))
+  })
+
+  it('should not be able to check in on a distant gym', async () => {
+    gymsRepository.items.push({
+      id: 'gymID-02',
+      title: 'Champions2 gym',
+      description: 'Only big boys allowed',
+      phone: '',
+      latitute: new Decimal(-27.0747279),
+      longitute: new Decimal(-49.4889672),
+    })
+
+    await expect(() =>
+      sut.execute({
+        gymId: 'gymID-02',
+        userId: 'userID-01',
+        userLatitude: -27.2092078,
+        userLongitude: -49.6401567,
+      }),
+    ).rejects.toBeInstanceOf(Error)
   })
 })
