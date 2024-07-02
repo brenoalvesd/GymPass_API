@@ -44,8 +44,8 @@ model Gym {
   title       String
   description String?
   phone       String?
-  latitute    Decimal
-  longitute   Decimal
+  latitude    Decimal
+  longitude   Decimal
 
   checkIns CheckIn[]
 
