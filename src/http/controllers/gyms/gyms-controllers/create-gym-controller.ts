@@ -28,5 +28,5 @@ export async function create(request: FastifyRequest, reply: FastifyReply) {
     longitude,
   })
 
-  return reply.status(201).send({ message: 'Gym successfully created!' })
+  return reply.status(201).send()
 }
