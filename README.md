@@ -1,7 +1,7 @@
 ## Sobre o projeto 
 
-- Essa é uma API para realizar check-in em academias. Gympass Style App
-- Essa aplicação é uma API construída pra estudar desenvolvimento back-end com TypeScript seguindo alguns conceitos de SOLID, Design Patterns, e Docker. 
+- Essa é uma API para realizar check-in em academias, no estilo do GymPass/TotalPass.
+- Essa aplicação foi construída para treinar minha habilidade de desenvolvimento back-end com TypeScript, e para aprender sobre Design Patterns, Docker, e alguns dos conceitos de SOLID. 
 
 ## Ferramentas
 
