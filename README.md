@@ -53,5 +53,5 @@
 Foi uma tarefa desafiadora lidar com a construção de uma aplicação com tantas camadas e funcionalidades diferentes.
 
 O aprendizado com esse projeto foi imenso. Dentre os conhecimentos que adquiri, destacam-se: 
-    - Como desenvolver a arquitetura de uma aplicação com muitas camadas
-    - Como configurar o banco de dados PostgreSQL com Prisma Client e Docker 
+- Como desenvolver a arquitetura de uma aplicação com muitas camadas
+- Como configurar o banco de dados PostgreSQL com Prisma Client e Docker 
